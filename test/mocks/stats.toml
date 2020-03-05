@@ -1,0 +1,23 @@
+[hp]
+display_name = "Vie"
+domain = "0 to +oo" # Default
+type = "integer" # Default
+
+[speed]
+display_name = "Vitesse"
+
+[reputation]
+display_name = "Réputation"
+
+[food]
+display_name = "Niveau d'alimentation"
+
+[strength]
+display_name = "Force"
+
+[smart]
+display_name = "Intelligence"
+
+[name]
+display_name = "Nom"
+type = "string"

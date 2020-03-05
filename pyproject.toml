@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "PyChemin"
-version = "0.1.0"
+version = "0.0.1-dev0"
 description = "A minimal language to describe interactive, terminal-based text adventure games"
 authors = ["ewen-lbh <ewen.lebihan7@gmail.com>"]
 license = "MIT"

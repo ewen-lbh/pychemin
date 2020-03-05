@@ -1,0 +1,117 @@
+#
+# PERSOS SPECIAUX
+#
+
+[Unknown]
+name      = "???"
+
+# 
+# PERSOS PRINCIPAUX
+#
+
+[Lydia]
+name			= "Лидя фон Ардэнбэрг"
+role			= "Reine d'Hyperis"
+color			= "#b4a7d6"
+is_from		= "grand harz"
+side			= "queen"
+
+[Agidius]
+name			= "Эгидюс Ловэнштам"
+role			= "Général de la Garde Royale et de l'Armée"
+color			= "#f1c232"
+is_from		= "bliarussa"
+side			= "queen"
+
+[Artur]
+name			= "Артур Чарчайт"
+role			= "Chef de la résistance"
+color			= "#6d9eeb"
+is_from		= "Ruma"
+side			= "resistance"
+
+[Enrich]
+name			= "Энриш Штайн"
+role			= "Sous-chef de la résistance"
+color			= "#cc0000"
+is_from		= "Ukaland"
+side			= "resistance"
+
+[Grzeska]
+name			= "Grzęskä Czekoczkięwich"
+role			= "Ambassadeur de la RDN"
+is_from		= ["république des deux nations", "pologne"]
+color			= "#674ea7"
+
+#
+# PERSOS SECONDAIRES
+#
+
+[Boris]
+name			= "Борис Албанов"
+is_from		= "russa"
+side			= "resistance"
+traits		= ["baraqué"]
+
+[Melinda]
+name			= "Мелинда Катона"
+is_from		= "garen"
+side			= "resistance"
+traits		= ["blond"]
+relation	= 30
+
+[Anatoly]
+name			= "Анатоли Атанжласор"
+is_from		= "siberia"
+side			= "resistance"
+traits		= ["blond"]
+
+[Artyom]
+name			= "Артём Кашански"
+is_from		= "bliarussa"
+side			= "resistance"
+traits		= ["brindille"]
+
+[Johanna]
+name			= "Жохана Фоербах"
+is_from		= "austri"
+side			= "resistance"
+traits		= ["brune"]
+relation	= -15
+
+#
+# PNJ λ
+#
+
+[Marco]
+name			= "Марко Морандино"
+is_from		= "corse"
+role			= "marchand"
+
+[Rodolf]
+name			= "Родолф Хаз"
+role			= "tavernier"
+
+[Woldemar]
+name			= "Волдемар"
+
+[Anna]
+name			= "Ана Киршов"
+
+[Sveika]
+name			= "Свеика Денаки"
+special		= true
+role			= "marchand"
+is_from		= ["republique des deux nations", "lituanie"]
+
+[Wladek]
+name			= "Владек Машофник"
+role			= "voyageur"
+is_from		= "pologne"
+special		= true
+
+[Toma]
+name			= "Тома Глоглуглуглаглуглэглэнглоглолэн"
+is_from		= "madagascar"
+role			= "vendeur"
+relation	= 100
