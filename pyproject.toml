@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "PyChemin"
+version = "0.1.0"
+description = "A minimal language to describe interactive, terminal-based text adventure games"
+authors = ["ewen-lbh <ewen.lebihan7@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+colr = "^0.9.1"
+unidecode = "^1.1.1"
+fuzzywuzzy = "^0.18.0"
+python-levenshtein = "^0.12.0"
+termcolor = "^1.1.0"
+lark-parser = "^0.8.1"
+docopt = "^0.6.2"
+
+[tool.poetry.scripts]
+pychemin = "pychemin.cli:run"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
