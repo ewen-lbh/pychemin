@@ -14,6 +14,7 @@ python-levenshtein = "^0.12.0"
 termcolor = "^1.1.0"
 lark-parser = "^0.8.1"
 docopt = "^0.6.2"
+toml = "^0.10.0"
 
 [tool.poetry.scripts]
 pychemin = "pychemin.cli:run"
