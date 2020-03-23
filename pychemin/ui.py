@@ -1,6 +1,6 @@
 from time import sleep
 from unidecode import unidecode
-from fuzzywuzzy import process
+from rapidfuzz import process
 from textwrap import TextWrapper
 from shutil import get_terminal_size
 from termcolor import colored
@@ -28,18 +28,18 @@ def ask(choices: list, error_callback: callable = None, restrict_to_choices: boo
     # Certains choix n'auront pas de synonymes et seront donc simplement des chaîne de caractères.
     # On normalise la liste de choix pour que tout les choix soit une liste de synonymes
     choices = [ [s] if type(s) is not list else s for s in choices ]
-    # On "aplatit" la liste de choix pour l'utiliser avec le module fuzzywuzzy: 
+    # On "aplatit" la liste de choix pour l'utiliser avec le module rapidfuzz: 
     # liste de listes → liste contenant touts les synonymes
     # Au passage, on enlève tout les accents avec unidecode
     flat_choices = [unidecode(synonym) for choice in choices for synonym in choice]
-    # Grâce au module fuzzywuzzy, on récupère le choix qui est le plus proche parmis tout les synonymes confondus
+    # Grâce au module rapidfuzz, on récupère le choix qui est le plus proche parmis tout les synonymes confondus
     closest, score = process.extractOne(ans, flat_choices)
     # Si le score de similarité est assez élevé, on considère que le choix du joueur correspond au synonyme extrait.
     # Sinon, on considère que la réponse du joueur était en dehors des choix.
     if score >= 75:
         # On passe sur chaque choix
         for synonyms in choices:
-            # On voit si le choix extrait par fuzzywuzzy est dans la liste de synonymes pour ce choix
+            # On voit si le choix extrait par rapidfuzz est dans la liste de synonymes pour ce choix
             if closest in [unidecode(s) for s in synonyms]:
                 # On fait une ligne vide
                 print()
